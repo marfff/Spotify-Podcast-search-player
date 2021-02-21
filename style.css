@@ -1,0 +1,80 @@
+body {
+    margin:0;
+    /* background-color:green; */
+}
+
+h2{
+    color:red
+}
+.innerpagecontainer {
+    width:85%;
+    margin-left:10%;
+    min-height:450px;
+    margin-top:25px;
+    margin-bottom:25px;
+}
+
+.ipodlog {
+    height:50px;
+    width:50px;
+}
+
+.logotopleft {
+display:flex;
+background:purple;
+width:115px;
+height:35px;
+}
+
+.pictureright{
+    min-height:500px;
+    min-width:300px;
+    margin-left:400px;
+    margin-right:10%;
+    min-width:600px; 
+    margin-top:15px;
+    margin-bottom:60px;
+}
+
+.centralsection{
+    display:flex;
+    position: relative;
+    margin-top: -420px;
+    flex-direction: column;
+
+}
+
+.headlinebannertop, .headlinebannerbottom {
+    font-size:30px;
+}
+
+.instructions {
+    min-width:290px;
+    width:250px;
+    font-size:14px;
+    line-height:16px;
+}
+
+.form1 {
+    display:flex;
+    background-color: pink;
+    min-width:200px;
+    width:250px;
+    height:30px;
+
+}
+
+.input1 {
+    min-width:170px;
+    font-size:10px;
+}
+
+.input2 {
+    min-width:70px;
+    font-size:10px;
+}
+
+.submit1{
+    min-width:70px;
+    font-size:10px;
+}
