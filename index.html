@@ -34,12 +34,13 @@
             </div>
 
 
-            <form action="/action_page.php" class="form1">
+            <form action="/action_page.php" class="form1" name="myform" action="handle-data.php">
                 <label for="fname" class="label1"></label>
-                <input class="input1" type="email" onfocus="this.value=''" id="emailaddress" name="emadd"
-                    value="Email address"><br><br>
+                <input class="input1" type="email" name="emailaddress" value="Email address"
+                    onfocus="this.value=''"><br><br>
 
-                <input class="submit1" type="submit" id="submit1" value="Request Access">
+                <input class=" submit1" type="submit" id="submit1" onclick="validateForm(document.myform.emailddress)"
+                    value=" Request Access">
             </form>
 
             <div class="logosouter">
@@ -63,7 +64,7 @@
 
     <div class="pictures">
         <img class="dots" src="./assets/desktop/bg-pattern-dots.svg" alt="dot pattern"></img>
-    </div> -->
+    </div>
 
 </body>
 
