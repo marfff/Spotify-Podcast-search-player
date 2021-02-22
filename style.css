@@ -1,33 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+
 body {
+
     background: #121725
     /* background-color:green; */
 }
 
 .pagecontainer{
-    position: absolute;
-    width: 1275px;
-    height: 1031px;
-    margin:165px 1px 130px 165px;
-    background-color: #121725
-}
-
-/* .innerpagecontainer {
-    background-image: url("./assets/desktop/image-host.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
+position: absolute;
+width: 1275px;
+height: 1031px;
+margin:165px 1px 0px 165px;
+background-image: url("./assets/desktop/image-host.jpg");
+background-repeat:no-repeat;
+background-position:top right;
     
 
-} */
+}
 
 .logotopleft {
 position: absolute;
-margin-top:102px;
-margin-left:165px;
-display:flex;
+margin-top:-30px;
 width: 134.85px;
 height: 56px;
-left: 0px;
-top: 0px;
+top: -20px;
+margin-left:-12px;
 }
 
 /* .pictureright{
@@ -39,51 +36,51 @@ bottom: 0%;
 } */
 
 .outcontainer {
-position: absolute;
+position:absolute;
 left: 0%;
 right: 43.29%;
-margin: 165px 2px 130px 165px; 
-    }
+margin: 0px 2px 130px 165px;
+}
 
 
 .centralsection{
-font-family: 'Chivo', sans-serif;
-position: absolute;
-position: absolute;
-left: 0%;
+/* font-family: 'Chivo', sans-serif; */
+position:absolute;
+margin-left:165px;
 right: 47.84%;
-top: 34.22%;
+/* top: 34.22%; */
+top:131px;
 bottom: 0%;
-margin-top:80px;
+margin-right:-40px;
+margin-top:0px;
+width:723px;
+height:509px;
+background: #121725;
 }
 
 .headline {
 position: absolute;
 left: 0%;
 right: 47.84%;
-top: 34.22%;
-bottom: 46.41%;
+top: 98px;
 width:665px;
-height:58px;
+height:48px;
 margin-right:58px;
-margin-bottom:297px;
-
 font-family: 'Chivo', sans-serif;
 font-style: normal;
 font-weight: normal;
-font-size: 52px;
-line-height: 62px;
+font-size: 42px;
+line-height: 56px;
 /* or 119% */
 text-transform: uppercase;
 }
 
 .headlinebannertop {
-    color:#54E6AF
+    color:#54E6AF;
 }
 .headlinebannerbottom {
-    color:white
+    color:white;
 }
-
 
 .instructions {
 position: absolute;
@@ -91,9 +88,7 @@ left: 0%;
 width: 445px;
 height: 124px;
 right: 65.1%;
-top: 57.34%;
-bottom: 29.53%;
-margin-top:148px;
+margin-top:236px;
 font-family: 'Chivo', sans-serif;
 font-style: normal;
 font-weight: normal;
@@ -106,18 +101,15 @@ color: #C2CBE5;
 }
 
 .form1 {
-    display:flex;
-    background-color: pink;
-    position: absolute;
-    left: 0%;
-    right: 66.51%;
-    top: 76.72%;
-    bottom: 14.53%;
-    width:427px;
-    height:56px;
-    margin-top:272px;
-    background: #2C344B;
-    border-radius: 28px;
+display:flex;
+position: absolute;
+left: 0%;
+right: 66.51%;
+width:427px;
+height:56px;
+margin-top:350px;
+background: #2C344B;
+border-radius: 28px;
 }
 
 .input1 {
@@ -135,72 +127,51 @@ padding-left:32px;
 color: #FFFFFF;
 mix-blend-mode: normal;
 opacity: 0.5;
-    
 }
 
-
-
 .submit1{
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    height:46px;
-    width:162px;
-    top: 0%;
-    bottom: 0%;
-    background: #54E6AF;
-    box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
-    border-radius: 28px;
-    left: 60.89%;
-    right: 1.17%;
-    top: 8.93%;
-    bottom: 8.93%;
-    color: #121725;
-
-
+position: absolute;
+left: 0%;
+right: 0%;
+height:46px;
+width:162px;
+top: 0%;
+bottom: 0%;
+background: #54E6AF;
+box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
+border-radius: 28px;
+left: 60.89%;
+right: 1.17%;
+top: 8.93%;
+color: #121725;
 }
 
 .logosouter {
 display:flex;
 justify-content: space-between;
 position: absolute;
-width:535px;
+width:545px;
 height:30px;
 left: 0%;
 right: 57.98%;
-top: 95.47%;
 bottom: 0%;
-margin-top:392px;
 left:1px;
 }
 
 .ipodlogo2 {
-    width:99.9px;
-    height:29.91px;
-    color:#5A668A;
+width:99.9px;
+height:29.91px;
+color:#5A668A;
 }
 
 .dots {
-    width :140px;
-    position:relative;
-    left:90%;
-    bottom:100px;
-    height: 60px;
-}
-
-
-
-/* .pagecontainer{
-    background-image: url("./assets/desktop/image-host.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    position: absolute;
-    width: 1275px;
-    height: 640px;
-    left:387px;
-    left: 30.35%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-     */
+position:absolute;
+width :232px;
+height:103px;
+left:1268px;
+top:718px;
+position:relative;
+left:90%;
+/* bottom:100px; */
+height: 60px;
 }

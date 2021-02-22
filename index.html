@@ -3,12 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="font-src">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
+
+
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
     <title>Pod Landing Page</title>
+
     <link rel="stylesheet" href="/style.css" type="text/css" />
     <script src="/index.js"></script>
 </head>
@@ -19,54 +21,49 @@
             <img class="ipodlogo" src="./assets/desktop/logo.svg" alt="apple podcast">
             </img>
         </div>
-        <div class=outcontainer>
-            <div class=centralsection>
-                <div class=headline>
-                    <div class="headlinebannertop">PUBLISH YOUR PODCASTS</div>
-                    <div class="headlinebannerbottom">EVERYWHERE.</div>
-                </div>
+        <!-- <div class=outcontainer> --> -->
+        <div class=centralsection>
+            <div class=headline>
+                <div class="headlinebannertop">PUBLISH YOUR PODCASTS</div>
+                <div class="headlinebannerbottom">EVERYWHERE.</div>
+            </div>
 
-                <div class="instructions">Upload your audio to Pod with a single click. We’ll then distribute your
-                    podcast to Spotify,
-                    Apple Podcasts, Google Podcasts, Pocket Casts and more!
-                </div>
-
-
-                <form action="/action_page.php" class="form1">
-                    <label for="fname" class="label1"></label>
-                    <input class="input1" type="email" id="fname" name="fname" value="Email address"><br><br>
-
-                    <input class="submit1" type="submit" value="Request Access">
-                </form>
-
-                <div class="logosouter">
-
-                    <div class="log2">
-                        <img class="ipodlogo2" src="./assets/desktop/spotify.svg" alt="spotify podcast"></img>
-                    </div>
-                    <div class="log2">
-                        <img class="ipodlogo2" src="./assets/desktop/apple-podcast.svg" alt="apple podcast"></img>
-                    </div>
-                    <div class="log2">
-                        <img class="ipodlogo2" src="./assets/desktop/google-podcasts.svg" alt="google-podcasts"></img>
-                    </div>
-                    <div class="log2">
-                        <img class="ipodlogo2" src="./assets/desktop/pocket-casts.svg" alt="apple podcast"></img>
-                    </div>
-                </div>
+            <div class="instructions">Upload your audio to Pod with a single click. We’ll then distribute your
+                podcast to Spotify,
+                Apple Podcasts, Google Podcasts, Pocket Casts and more!
             </div>
 
 
+            <form action="/action_page.php" class="form1">
+                <label for="fname" class="label1"></label>
+                <input class="input1" type="email" onfocus="this.value=''" id="emailaddress" name="emadd"
+                    value="Email address"><br><br>
+
+                <input class="submit1" type="submit" id="submit1" value="Request Access">
+            </form>
+
+            <div class="logosouter">
+
+                <div class="log2">
+                    <img class="ipodlogo2" src="./assets/desktop/spotify.svg" alt="spotify podcast"></img>
+                </div>
+                <div class="log2">
+                    <img class="ipodlogo2" src="./assets/desktop/apple-podcast.svg" alt="apple podcast"></img>
+                </div>
+                <div class="log2">
+                    <img class="ipodlogo2" src="./assets/desktop/google-podcasts.svg" alt="google-podcasts"></img>
+                </div>
+                <div class="log2">
+                    <img class="ipodlogo2" src="./assets/desktop/pocket-casts.svg" alt="apple podcast"></img>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- <div class="pictures">
-            <img class="dots" src="./assets/desktop/bg-pattern-dots.svg" alt="dot pattern"></img>
-        </div> -->
+
     </div>
 
-
-
-
+    <div class="pictures">
+        <img class="dots" src="./assets/desktop/bg-pattern-dots.svg" alt="dot pattern"></img>
+    </div> -->
 
 </body>
 
