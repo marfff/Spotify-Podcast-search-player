@@ -100,7 +100,7 @@ color: #C2CBE5;
 
 }
 
-.form1 {
+.form3 {
 display:flex;
 position: absolute;
 left: 0%;
@@ -112,7 +112,7 @@ background: #2C344B;
 border-radius: 28px;
 }
 
-.input1 {
+.input3 {
 width:260px;
 font-size:10px;
 background: #2C344B;
@@ -129,7 +129,7 @@ mix-blend-mode: normal;
 opacity: 0.5;
 }
 
-.submit1{
+.submit3{
 position: absolute;
 left: 0%;
 right: 0%;
@@ -174,4 +174,27 @@ position:relative;
 left:90%;
 /* bottom:100px; */
 height: 60px;
+}
+
+.carousel {
+    display: flex;
+    height: 200px;
+    width: calc(4 * 160px);
+    position: relative;
+    overflow: hidden;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    transition: left 1.5s;
+}
+
+.inner {
+    display:flex;
+    flex-direction: column;
+    background-color:green;
+    width: 160px;
 }

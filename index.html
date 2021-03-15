@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="font-src">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -12,7 +11,7 @@
     <title>Pod Landing Page</title>
 
     <link rel="stylesheet" href="/style.css" type="text/css" />
-    <script src="/index.js"></script>
+
 </head>
 
 <body>
@@ -34,14 +33,14 @@
             </div>
 
 
-            <form action="/action_page.php" class="form1" name="myform" action="handle-data.php">
+            <!-- <form action="/action_page.php" class="form1" name="myform" action="handle-data.php">
                 <label for="fname" class="label1"></label>
-                <input class="input1" type="email" name="emailaddress" value="Email address"
+                <input class="input3" type="email" name="emailaddress" value="Email address"
                     onfocus="this.value=''"><br><br>
 
-                <input class=" submit1" type="submit" id="submit1" onclick="validateForm(document.myform.emailddress)"
+                <input class=" submit3" type="submit" id="submit3" onclick="validateForm(document.myform.emailaddress)"
                     value=" Request Access">
-            </form>
+            </form> -->
 
             <div class="logosouter">
 
@@ -60,12 +59,44 @@
             </div>
         </div>
 
+
+
+    </div>
+    <input id="searchbargenre" type="text" name="searchgenre" placeholder="Enter Genre..">
+
+    <form>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password">
+        <br>
+        <br>
+
+        <button type="submit" id="loginButton">
+            Log In
+        </button>
+        <br>
+        <br>
+        <button type="button" class="buttonstest" id="left">
+            Left
+        </button>
+        <button type="button" class="buttonstest" id="right">
+            Right
+        </button>
+
+    </form>
+    <br><br><br>
+    <div class="carousel" id=carousel>
+        <div id="items" class="items">
+            <!-- here -->
+        </div>
     </div>
 
     <div class="pictures">
         <img class="dots" src="./assets/desktop/bg-pattern-dots.svg" alt="dot pattern"></img>
     </div>
-
+    <script src="/index.js"></script>
 </body>
+
 
 </html>
