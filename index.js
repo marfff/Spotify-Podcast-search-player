@@ -28,7 +28,6 @@ let send = `https://accounts.spotify.com/authorize?client_id=${clientId}&redirec
 sEntered.addEventListener("click", (ev) => {
   ev.preventDefault();
   window.location.replace(`${send}`);
-  console.log("herreer");
 });
 
 const itemsElement = document.getElementById("items");

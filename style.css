@@ -8,9 +8,9 @@ body {
 
 .pagecontainer{
 position: absolute;
-width: 1275px;
+width: 100%;
 height: 1031px;
-margin:165px 1px 0px 165px;
+margin:165px -1px 0px 165px;
 background-image: url("./assets/desktop/image-host.jpg");
 background-repeat:no-repeat;
 background-position:top right;
@@ -44,122 +44,88 @@ margin: 0px 2px 130px 165px;
 
 
 .centralsection{
-/* font-family: 'Chivo', sans-serif; */
-position:absolute;
-margin-left:165px;
-right: 47.84%;
-/* top: 34.22%; */
-top:131px;
-bottom: 0%;
-margin-right:-40px;
-margin-top:0px;
-width:723px;
-height:509px;
+font-family: 'Chivo', sans-serif;
+margin-top:100px;
+padding-top:45px;
 background: #121725;
+border-radius:60px;
+width: 60%;
+padding-right:20px;
 }
 
 .headline {
-position: absolute;
-left: 0%;
-right: 47.84%;
-top: 98px;
-width:665px;
-height:48px;
-margin-right:58px;
 font-family: 'Chivo', sans-serif;
 font-style: normal;
 font-weight: normal;
-font-size: 42px;
-line-height: 56px;
-/* or 119% */
-text-transform: uppercase;
+font-size: 52px;
+line-height: 62px;
 }
 
 .headlinebannertop {
     color:#54E6AF;
-}
-.headlinebannerbottom {
-    color:white;
+    margin-left:18px;
 }
 
 .instructions {
-position: absolute;
-left: 0%;
-width: 445px;
-height: 124px;
-right: 65.1%;
-margin-top:236px;
 font-family: 'Chivo', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
+padding-top:10px;
+margin-top:10px;
+margin-left:20px;
 line-height: 28px;
-/* or 156% */
-
+margin-bottom:16px;
+opacity:.9;
 color: #C2CBE5;
-
 }
 
-.form3 {
-display:flex;
-position: absolute;
-left: 0%;
-right: 66.51%;
-width:427px;
-height:56px;
-margin-top:350px;
-background: #2C344B;
-border-radius: 28px;
-}
-
-.input3 {
-width:260px;
+#searchbargenre {
 font-size:10px;
+font-weight:700;
 background: #2C344B;
-width:427px;
 border-radius: 28px;
+width: 550px;
 font-family: 'Chivo', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
+outline-style: none;
+height: 54px;
 line-height: 28px;
-padding-left:32px;
+padding-left:23px;
 color: #FFFFFF;
 mix-blend-mode: normal;
-opacity: 0.5;
+opacity: 0.9;
 }
 
-.submit3{
+#loginButton{
 position: absolute;
-left: 0%;
-right: 0%;
+left: 20px;
+top:40px;
 height:46px;
-width:162px;
-top: 0%;
+width:160px;
 bottom: 0%;
 background: #54E6AF;
 box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
 border-radius: 28px;
-left: 60.89%;
-right: 1.17%;
-top: 8.93%;
 color: #121725;
+}
+
+#loginButton:hover {
+    opacity:0.9;
 }
 
 .logosouter {
 display:flex;
 justify-content: space-between;
-position: absolute;
-width:545px;
 height:30px;
-left: 0%;
-right: 57.98%;
-bottom: 0%;
-left:1px;
+padding-top:40px;
+padding-bottom:40px;
 }
 
 .ipodlogo2 {
-width:99.9px;
+width:110px;
 height:29.91px;
 color:#5A668A;
 }
@@ -168,18 +134,15 @@ color:#5A668A;
 position:absolute;
 width :232px;
 height:103px;
-left:1268px;
-top:718px;
-position:relative;
-left:90%;
-/* bottom:100px; */
 height: 60px;
+right:0px;
 }
 
 .carousel {
-    display: flex;
-    height: 200px;
-    width: calc(4 * 160px);
+    margin-top:45px;
+    margin-bottom:7px;
+    height: 160px;
+    /* width: calc(4 * 193px); */
     position: relative;
     overflow: hidden;
 }
@@ -187,14 +150,16 @@ height: 60px;
 .items {
     display: flex;
     flex-direction: row;
-    position: absolute;
     left: 0;
     transition: left 1.5s;
 }
 
-.inner {
+.inner >img {
     display:flex;
     flex-direction: column;
+    margin-right:35px;
     background-color:green;
     width: 160px;
+    left:168px;
+    border-radius:12px;
 }
