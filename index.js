@@ -1,24 +1,3 @@
-function validateForm(x) {
-  var x = document.forms["myform"]["emailaddress"].value;
-  let regex = /^([a-zA-z]{1,15})@([a-zA-z]{1,6})(\.com)$/;
-
-  let isExisting = regex.test(x);
-  // alert(isExisting);
-
-  if (x == "") {
-    alert("Oops! Please add your email -It can't be blank");
-    return;
-  }
-
-  if (isExisting) {
-    alert("HAPPY FACE :)");
-    return;
-  } else {
-    alert("Oops! Please check your email-please enter a valid email");
-    return;
-  }
-}
-
 let clientId = "db9c4e35b9904312b3edb8b320d4656e";
 let clientSecret = "7a3a0aad8fa04625bb22587da9976ac8";
 var input1 = "cooking";
@@ -47,6 +26,7 @@ getCode();
 
 let token = getCode();
 
+//class search and image slider
 class SearchSlider {
   constructor(elementId, token) {
     this.input = document.getElementById(elementId);
@@ -119,34 +99,87 @@ document.getElementById("left").addEventListener("click", (ev) => {
   ev.preventDefault();
 
   currentImageIndex--;
-  itemsElement.style.left = currentImageIndex * 160 + "px";
+  itemsElement.style.left = currentImageIndex * 195 + "px";
 });
 
 document.getElementById("right").addEventListener("click", (ev) => {
-  console.log("RIGHT");
-  ev.preventDefault();
+  console.log(currentImageIndex)
+  if (currentImageIndex != 0) {
+    console.log("RIGHT");
+    ev.preventDefault();
 
-  currentImageIndex++;
-  itemsElement.style.left = currentImageIndex * 160 + "px";
+    currentImageIndex++;
+    itemsElement.style.left = currentImageIndex * 195 + "px";
+  }
 });
 
-var carClass = document.getElementsByClassName("carousel");
-let buttonstyles = document.getElementsByClassName("buttonstest");
-console.log(buttonstyles);
-console.log(carClass[0].style.left);
-let styleL = carClass[0].style.left;
-toLeft = (t) => {
-  console.log(carClass);
-
-  console.log(t);
-  var i;
-  for (i = 0; i < carClass.length; i++) {
-    carClass[i].style.left = t + styleL;
-  }
-  styleL = carClass[0].style.left;
-  console.log("STYLE", styleL);
-};
-
 const listen = (event) => {
-  console.log("CLICKKKKKED", event.target.id);
+  console.log("CLICKLISTEN", event.target.id);
 };
+
+// EMAIL REGEX CHECKER
+// function validateForm(x) {
+//   var x = document.forms["myform"]["emailaddress"].value;
+//   let regex = /^([a-zA-z]{1,15})@([a-zA-z]{1,6})(\.com)$/;
+
+//   let isExisting = regex.test(x);
+//   // alert(isExisting);
+
+//   if (x == "") {
+//     alert("Oops! Please add your email -It can't be blank");
+//     return;
+//   }
+
+//   if (isExisting) {
+//     alert("HAPPY FACE :)");
+//     return;
+//   } else {
+//     alert("Oops! Please check your email-please enter a valid email");
+//     return;
+//   }
+// }
+
+// playAudio(spotify:show:7ADB7W51dgdlKf3mmmRUvd)
+
+// var carClass = document.getElementsByClassName("carousel");
+// let buttonstyles = document.getElementsByClassName("buttonstest");
+// console.log(buttonstyles);
+// console.log(carClass[0].style.left);
+// let styleL = carClass[0].style.left;
+// toLeft = (t) => {
+//   console.log(carClass);
+
+//   console.log(t);
+//   var i;
+//   for (i = 0; i < carClass.length; i++) {
+//     carClass[i].style.left = t + styleL;
+//   }
+//   styleL = carClass[0].style.left;
+//   console.log("STYLE", styleL);
+// };
+
+// const play = ({
+//   spotify_uri,
+//   playerInstance: {
+//     _options: {
+//       getOAuthToken,
+//       id
+//     }
+//   }
+// }) => {
+//   getOAuthToken(access_token => {
+//     fetch(`https://api.spotify.com/v1/me/player/play?device_id=${id}`, {
+//       method: 'PUT',
+//       body: JSON.stringify({ uris: [spotify_uri] }),
+//       headers: {
+//         'Content-Type': 'application/json',
+//         'Authorization': `Bearer ${access_token}`
+//       },
+//     });
+//   });
+// };
+
+// play({
+//   playerInstance: new Spotify.Player({ name: "..." }),
+//   spotify_uri: 'spotify:track:7xGfFoTpQ2E7fRF5lN10tr',
+// });
