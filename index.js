@@ -60,9 +60,11 @@ class SearchSlider {
     let result1 = await this.getShows();
     let x = 0;
     console.log("CL", result1.shows.items);
+
     itemsElement.innerHTML = "";
 
-    //making html = inner HTML
+    //creating- html = inner HTML- for each image title and listen button
+    itemsElement.innerHTML = "";
     result1.shows.items.forEach((show, index) => {
       console.log("SHOW", show);
 
@@ -78,8 +80,16 @@ class SearchSlider {
       innerElement.appendChild(imgElement);
 
       const titleElement = document.createElement("p");
+      titleElement.className = "title";
       titleElement.textContent = show.name;
       innerElement.appendChild(titleElement);
+
+      const listenElement = document.createElement("button");
+      listenElement.className = "listenbuttons";
+      listenElement.id = `select${index}`;
+      listenElement.textContent = "Listen";
+      listenElement.addEventListener("click", listen);
+      innerElement.appendChild(listenElement);
 
       itemsElement.appendChild(innerElement);
     });
@@ -135,4 +145,8 @@ toLeft = (t) => {
   }
   styleL = carClass[0].style.left;
   console.log("STYLE", styleL);
+};
+
+const listen = (event) => {
+  console.log("CLICKKKKKED", event.target.id);
 };
