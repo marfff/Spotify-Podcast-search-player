@@ -205,7 +205,7 @@ word-wrap:normal;
 flex-direction: row;
 /* position: absolute; */
 color:white;
-font-size: 17px;
+font-size: 15px;
 width: 160px;
 font-weight:400;
 height: 32px;
@@ -236,7 +236,7 @@ margin-left:25px;
 }
 
 .image {
-    box-shadow: 4px 5px 5px #00d2c6, 
-            -1px -1px 2px #00ffff;
+    /* box-shadow: 4px 5px 5px #00d2c6, 
+            -1px -1px 2px #00ffff; */
  
 }
