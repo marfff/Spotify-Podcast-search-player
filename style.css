@@ -5,10 +5,10 @@ background: #121725
 }
 
 .header{
-    display:flex;
-    margin: 20px;
-    justify-content: space-between;
-    margin-left:165px;
+display:flex;
+margin: 20px;
+justify-content: space-between;
+margin-left:165px;
 }
 
 .pagecontainer{
@@ -47,9 +47,10 @@ background: #121725;
 border-radius:60px;
 width: 60%;
 padding-right:20px;
-height:629px;
+height:700px;
 left:165px;
 top:190px;
+margin-bottom:-50px;
 }
 
 .headline {
@@ -58,12 +59,21 @@ font-style: normal;
 font-weight: normal;
 font-size: 46px;
 line-height: 62px;
+user-select: none;
 }
 
 .headlinebannertop {
 color:#54E6AF;
 margin-left:18px;
 }
+
+.headlinebannerbottom {
+color:#54E6AF;
+margin-left:18px;
+color: #C2CBE5;
+font-size:28px;
+margin-top:-10px;
+    }
 
 .instructions {
 font-family: 'Chivo', sans-serif;
@@ -78,8 +88,6 @@ margin-bottom:16px;
 opacity:.3;
 color: #C2CBE5;
 }
-
-
 
 #searchbargenre {
 font-size:10px;
@@ -121,8 +129,8 @@ position:absolute;
 display:flex;
 width: 100%;
 justify-content: space-between;
-height:30px;
-padding-left:50px;
+height:28px;
+padding-left:30px;
 bottom:20px;
 width:90%;
 }
@@ -136,13 +144,12 @@ color:#5A668A;
 .dots {
 position:absolute;
 width :232px;
-height:103px;
-height: 60px;
+height: 120px;
 right:0px;
+bottom:140px;
 }
 
 .carousel {
-margin-top:25px;
 margin-bottom:7px;
 height: 320px;
 /* width: calc(4 * 193px); */
@@ -186,8 +193,6 @@ box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.2);
 border-radius: 28px;
 outline: none;
 cursor: pointer;
-
-
 }
 
 /* #button4 {
@@ -212,21 +217,40 @@ height: 32px;
 padding-top: 7px;
 padding-bottom: 28px;
 text-align: center;
+user-select: none;
 }
 
 .buttonstest {
 position:relative;
-top:450px;
-margin-left:25px;
-
+top:90px;
+height:30px;
+width:30px;
+border-radius:50%;
+outline: none;
+cursor: pointer;
+z-index: 5;
+left:10px;
 }
+.buttonstest:hover  {
+    opacity:.8
+}
+
+#left{
+    
+    }
+
+#right{
+        position:relative;
+        left:91%;
+        }
 
 .player9 {
     position:absolute;
-    width: 64%;
-    top: 67%;
+    width: 76%;
+    top: 69%;
+    height:20%;
     border-radius:30px;
-    margin-left:auto;
+    margin-left:35px;
     margin-right:auto;
 }
 
