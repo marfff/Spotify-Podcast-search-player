@@ -62,6 +62,7 @@ class SearchSlider {
       const titleElement = document.createElement("p");
       titleElement.className = "title";
       titleElement.textContent = show.name;
+      titleElement.name = show.uri;
       innerElement.appendChild(titleElement);
 
       const listenElement = document.createElement("button");
@@ -69,9 +70,11 @@ class SearchSlider {
       listenElement.id = `select${index}`;
       listenElement.textContent = "Listen";
       listenElement.addEventListener("click", listen);
+      listenElement.name = show.uri;
       innerElement.appendChild(listenElement);
 
       itemsElement.appendChild(innerElement);
+      clearButtons()
     });
   }
 
@@ -103,7 +106,7 @@ document.getElementById("left").addEventListener("click", (ev) => {
 });
 
 document.getElementById("right").addEventListener("click", (ev) => {
-  console.log(currentImageIndex)
+  console.log(currentImageIndex);
   if (currentImageIndex != 0) {
     console.log("RIGHT");
     ev.preventDefault();
@@ -113,9 +116,37 @@ document.getElementById("right").addEventListener("click", (ev) => {
   }
 });
 
+// https://open.spotify.com/embed-podcast/show/0TEXfe7CY1EFAbEP9GXIRs
+
 const listen = (event) => {
-  console.log("CLICKLISTEN", event.target.id);
+  // let fulluri = document.getElementById("listener").src
+  console.log("EVENT", event.target);
+  document.getElementById("listener").name = event.target.name;
+  let nameuri = document.getElementById("listener").name;
+  // console.log("nameURI",nameuri)
+  let nameuri2 = nameuri.slice("13");
+  // console.log("SPLIT",nameuri2)
+  let newuri = `https://open.spotify.com/embed-podcast/show/${nameuri2}`;
+  console.log("NEWURI", newuri);
+  // console.log("CLICKLISTEN", event.target.name);
+  document.getElementById("listener").src = newuri;
 };
+
+//button background color clearer
+const clearButtons = () => {
+  document.querySelectorAll(".listenbuttons").forEach((button) => {
+    button.addEventListener("click", function () {
+      console.log("ACTIVATE");
+      // Reset the currently active buttons:
+      document.querySelectorAll(".active").forEach((button) => {
+        button.classList.remove("active");
+      });
+
+      // Add the active class to the clicked button
+      button.classList.add("active");
+    });
+  });
+}
 
 // EMAIL REGEX CHECKER
 // function validateForm(x) {

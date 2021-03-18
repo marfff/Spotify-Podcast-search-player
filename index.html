@@ -15,30 +15,74 @@
 </head>
 
 <body>
-    <div class="pagecontainer">
+    <div class="header">
         <div class="logotopleft">
             <img class="ipodlogo" src="./assets/desktop/logo.svg" alt="apple podcast">
             </img>
         </div>
-        <!-- <div class=outcontainer> --> -->
-        <div class=centralsection>
-            <div class=headline>
-                <div class="headlinebannertop">DISCOVER NEW PODCASTS
+        <input id="searchbargenre" type="text" name="searchgenre" placeholder="Search for your next favourite Podcast ..."/>
+        <button type="submit" id="loginButton">
+        Log In
+        </button>
+    </div>
+    
+    <div class="pagecontainer">
+        
+    </div>
+    
+    <div class="centralsection">
+        <div class="headline">
+            <div class="headlinebannertop">DISCOVER NEW PODCASTS
 
-                </div>
             </div>
-            <div class="instructions">Search for your next favourite Podcast</div>
-            <input id="searchbargenre" type="text" name="searchgenre" placeholder="Search ...">
-            <div class="carousel" id=carousel>
-                <div id="items" class="items">
-                    <!-- here -->
-                </div>
+        </div>
+        
+        <div class="carousel" id=carousel>
+            <div id="items" class="items">
+                <createelements>
             </div>
+        </div>
 
-            <div class="pictures">
-                <img class="dots" src="./assets/desktop/bg-pattern-dots.svg" alt="dot pattern"></img>
+        <button type="button" class="buttonstest" id="left">
+            Left
+        </button>
+        <button type="button" class="buttonstest" id="right">
+                Right
+        </button>
+
+        <iframe id="listener" class="player9" name="iframe" src="https://open.spotify.com/embed-podcast/show/0TEXfe7CY1EFAbEP9GXIRs" width="30%"  frameborder="1" allowtransparency="true" allow="encrypted-media">
+        </iframe>
+        <div class="logosouter">
+            <div class="log2">
+                <img class="ipodlogo2" src="./assets/desktop/spotify.svg" alt="spotify podcast"></img>
             </div>
-            <!-- <div class="selectbuttonswrapper" id="selectbuttonswrapper">
+            <div class="log2">
+                <img class="ipodlogo2" src="./assets/desktop/apple-podcast.svg" alt="apple podcast"></img>
+            </div>
+            <div class="log2">
+                <img class="ipodlogo2" src="./assets/desktop/google-podcasts.svg" alt="google-podcasts"></img>
+            </div>
+            <div class="log2">
+                <img class="ipodlogo2" src="./assets/desktop/pocket-casts.svg" alt="apple podcast"></img>
+            </div>
+        </div>
+    </div>
+    <footer class = "footer">
+        
+        </div>
+        <div class="pictures">
+            <img class="dots" src="./assets/desktop/bg-pattern-dots.svg" alt="dot pattern"></img>
+        </div>
+    </footer>
+    <script src="/index.js"></script>
+    </script>
+</body>
+
+
+</html>
+
+
+<!-- <div class="selectbuttonswrapper" id="selectbuttonswrapper">
                 <button type="button" class="selectbuttons" id="button1">Listen
                 </button>
                 <button type="button" class="selectbuttons" id="button2">Listen
@@ -48,48 +92,3 @@
                 <button type="button" class="selectbuttons" id="button4">Listen
                 </button>
             </div> -->
-            <div class="logosouter">
-
-                <div class="log2">
-                    <img class="ipodlogo2" src="./assets/desktop/spotify.svg" alt="spotify podcast"></img>
-                </div>
-                <div class="log2">
-                    <img class="ipodlogo2" src="./assets/desktop/apple-podcast.svg" alt="apple podcast"></img>
-                </div>
-                <div class="log2">
-                    <img class="ipodlogo2" src="./assets/desktop/google-podcasts.svg" alt="google-podcasts"></img>
-                </div>
-                <div class="log2">
-                    <img class="ipodlogo2" src="./assets/desktop/pocket-casts.svg" alt="apple podcast"></img>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <form>
-        <label for="email">Email:</label><br>
-        <br>
-        <br>
-
-        <button type="submit" id="loginButton">
-            Log In
-        </button>
-        <br>
-        <br>
-        <button type="button" class="buttonstest" id="left">
-            Left
-        </button>
-        <button type="button" class="buttonstest" id="right">
-            Right
-        </button>
-
-    </form>
-    <br><br><br>
-
-    <script src="/index.js"></script>
-    </script>
-</body>
-
-
-</html>
